@@ -750,7 +750,27 @@
 
 
         <form id="bookingForm"
-              class="booking-form">
+      class="booking-form"
+      name="pooja-booking"
+      method="POST"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field">
+
+    <input type="hidden"
+           name="form-name"
+           value="pooja-booking">
+
+    <input type="hidden"
+           name="subject"
+           data-remove-prefix
+           value="New Joshi Guruji Pooja Booking">
+
+    <p class="hidden-honeypot">
+        <label>
+            Don't fill this out:
+            <input name="bot-field">
+        </label>
+    </p>
 
 
             <div class="form-row">
